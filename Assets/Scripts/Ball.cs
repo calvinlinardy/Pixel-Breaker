@@ -6,10 +6,10 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     // config params
-    [SerializeField] Paddle paddle1;
+    [SerializeField] Paddle paddle1 = null;
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 15f;
-    [SerializeField] AudioClip[] ballSounds;
+    [SerializeField] AudioClip[] ballSounds = null;
 
     //state
     Vector2 paddleToBallVector;
