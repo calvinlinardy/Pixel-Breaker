@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4514919590311398767}
   - component: {fileID: 4514919590311398766}
   m_Layer: 0
-  m_Name: Block
-  m_TagString: Breakable
+  m_Name: Stone Block
+  m_TagString: Unbreakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2d460f93622285f4391bf55d8c5ce58d, type: 3}
-  m_Color: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 1}
+  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

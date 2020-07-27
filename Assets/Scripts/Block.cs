@@ -14,13 +14,24 @@ public class Block : MonoBehaviour
     private void Start()
     {
         gameStatus = FindObjectOfType<GameStatus>();
+        if (tag == "Breakable")
+        {
+            AddBreakableBlocks();
+        }
+    }
+
+    private void AddBreakableBlocks()
+    {
         level = FindObjectOfType<Level>();
-        level.AddBreakableBlocks();
+        level.AddBlocks();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+        if (tag == "Breakable")
+        {
+            DestroyBlock();
+        }
     }
 
     private void DestroyBlock()
