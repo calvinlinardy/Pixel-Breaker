@@ -7,6 +7,7 @@ public class LoseCollider : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Game Over");
     }
 }

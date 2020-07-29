@@ -12,6 +12,12 @@ public class Paddle : MonoBehaviour
     // cached references
     GameStatus theGameStatus;
     Ball theBall;
+    bool yourBool;
+    
+    private void Awake()
+    {
+        yourBool = PlayerPrefs.GetInt("Cheats") != 0;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +30,20 @@ public class Paddle : MonoBehaviour
     void Update()
     {
         Vector2 paddlePos = new Vector2(transform.position.x, transform.position.y);
-        paddlePos.x = Mathf.Clamp(GetXPos(), minX, maxX);
-        transform.position = paddlePos;
+        if (SceneLoader.GameIsPaused)
+        {
+            paddlePos.x = gameObject.transform.position.x;
+        }
+        else
+        {
+            paddlePos.x = Mathf.Clamp(GetXPos(), minX, maxX);
+            transform.position = paddlePos;
+        }
     }
 
     private float GetXPos()
     {
-        if (theGameStatus.IsAutoPlayEnabled())
+        if (theGameStatus.IsAutoPlayEnabled() || (yourBool = PlayerPrefs.GetInt("Cheats") != 0))
         {
             return theBall.transform.position.x;
         }

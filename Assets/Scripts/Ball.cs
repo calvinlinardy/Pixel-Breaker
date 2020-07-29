@@ -30,8 +30,11 @@ public class Ball : MonoBehaviour
     {
        if (!hasStarted)
         {
-            LockBallToPaddle();
-            LaunchOnClick();
+            if (!SceneLoader.GameIsPaused)
+            {
+                LockBallToPaddle();
+                LaunchOnClick();
+            }
         }
     }
 
