@@ -30,7 +30,7 @@ public class CheatCode : MonoBehaviour
 
         if (index == cheatCode.Length)
         {
-            PlayerPrefs.SetInt("Cheats", (yourBool ? 1 : 0));
+            PlayerPrefs.SetInt("Cheats", (yourBool ? 0 : 1));
         }
     }
 }

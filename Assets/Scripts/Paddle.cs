@@ -16,7 +16,7 @@ public class Paddle : MonoBehaviour
     
     private void Awake()
     {
-        yourBool = PlayerPrefs.GetInt("Cheats") != 0;
+        //yourBool = PlayerPrefs.GetInt("Cheats") != 0;
     }
 
     // Start is called before the first frame update
@@ -43,7 +43,7 @@ public class Paddle : MonoBehaviour
 
     private float GetXPos()
     {
-        if (theGameStatus.IsAutoPlayEnabled() || (yourBool = PlayerPrefs.GetInt("Cheats") != 0))
+        if (theGameStatus.IsAutoPlayEnabled() || (PlayerPrefs.GetInt("Cheats") == 1))
         {
             return theBall.transform.position.x;
         }

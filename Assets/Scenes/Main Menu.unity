@@ -1707,6 +1707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheatCodeButton
       objectReference: {fileID: 0}
+    - target: {fileID: 7491627847770099219, guid: 87e2ea48fecf3d2449a6d14a2630a375,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7491627847770099222, guid: 87e2ea48fecf3d2449a6d14a2630a375,
         type: 3}
       propertyPath: m_Color.r

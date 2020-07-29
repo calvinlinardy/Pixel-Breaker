@@ -51,6 +51,7 @@ public class SceneLoader : MonoBehaviour
     {
         gameStatus.ResetGame();
         SceneManager.LoadScene(0);
+        GameIsPaused = false;
     }
 
     public void LoadNextScene()
