@@ -1346,7 +1346,7 @@ PrefabInstance:
     - target: {fileID: 149209309723920713, guid: 25a047976a8b34348b67cb20f67e2499,
         type: 3}
       propertyPath: isAutoPlayEnabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 149209309723920714, guid: 25a047976a8b34348b67cb20f67e2499,
         type: 3}
@@ -1355,6 +1355,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25a047976a8b34348b67cb20f67e2499, type: 3}
+--- !u!114 &149209309516693240 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 149209309723920713, guid: 25a047976a8b34348b67cb20f67e2499,
+    type: 3}
+  m_PrefabInstance: {fileID: 149209309516693239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1611a680055ef6e478af53e9a70c29b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &166060664444720827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1561,16 +1573,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3098981528181497510, guid: b1261f02a435d334d9f441f5ca0a1bee,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 149209309516693240}
+    - target: {fileID: 3098981528181497510, guid: b1261f02a435d334d9f441f5ca0a1bee,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheatOff
+      objectReference: {fileID: 0}
     - target: {fileID: 9096040764445223362, guid: b1261f02a435d334d9f441f5ca0a1bee,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1493824405844563623}
-    - target: {fileID: 9096040764445223362, guid: b1261f02a435d334d9f441f5ca0a1bee,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Restart
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1261f02a435d334d9f441f5ca0a1bee, type: 3}
 --- !u!1001 &675072821471956785
