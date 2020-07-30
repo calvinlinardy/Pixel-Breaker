@@ -20,13 +20,14 @@ public class GameStatus : MonoBehaviour
         if (gameStatusCount > 1)
         {
             gameObject.SetActive(false);
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
         else
         {
             DontDestroyOnLoad(gameObject);
         }
     }
+
 
     public void ResetGame()
     {

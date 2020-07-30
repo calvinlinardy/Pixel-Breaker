@@ -58,16 +58,17 @@ public class SceneLoader : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
-
     }
 
     public void Continue()
     {
+        gameStatus.ResetGame();
         SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
     }
 
     public void Restart()
     {
+        gameStatus.ResetGame();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         GameIsPaused = false;
     }

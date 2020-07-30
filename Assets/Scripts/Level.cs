@@ -24,8 +24,8 @@ public class Level : MonoBehaviour
     {
         breakableBlocks--;
         if (breakableBlocks <= 0)
-        {
-            sceneLoader.LoadNextScene();
-        }
+            {
+                sceneLoader.LoadNextScene();
+            }
     }
 }
